@@ -4,30 +4,33 @@
     ViewData["Title"] = "Home page";
 }
 
-<span asp-validation-for="Address.Street" class="text-danger"></span>
 
 <div class="text-center">
-    <h1 class="display-4">Welcome @Model.Name</h1></br>
+    <h1 class="display-4">Welcome @Model.Name</h1><br />
 
     <form method="post">
         <div class="row">
             <div class="col">
                 <label asp-for="Address.Street"></label><br />
+                <span asp-validation-for="Address.Street" class="text-danger"></span>
                 <input asp-for="Address.Street" />
             </div>
 
             <div class="col">
                 <label asp-for="Address.Number"></label><br />
+                <span asp-validation-for="Address.Number" class="text-danger"></span>
                 <input asp-for="Address.Number" />
             </div>
 
             <div class="col">
                 <label asp-for="Address.ZipCode"></label><br />
+                <span asp-validation-for="Address.ZipCode" class="text-danger"></span>
                 <input asp-for="Address.ZipCode" />
             </div>
 
             <div class="col">
                 <label asp-for="Address.City"></label><br />
+                <span asp-validation-for="Address.City" class="text-danger"></span>
                 <input asp-for="Address.City" />
             </div>
         </div>
